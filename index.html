@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" ng-app="voiture">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Exercice 4</title>
+</head>
+<body>
+  <div ng-controller="Cntrl" class="col-2 offset-5 jumbotron">
+    <ul ng-repeat="voiture in voitures" ng-if="voiture.couleur != 'verte'">
+      <li>
+        {{voiture.marque}} - {{voiture.couleur}}
+      </li>
+    </ul>
+  </div>
+  <a href="../../index.html"><button type="button" class="btn btn-primary" name="button">Retour</button></a>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
